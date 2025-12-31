@@ -1,10 +1,8 @@
 {
   "name": "jiotv-converter",
   "version": "1.0.0",
-  "description": "Convert JioTV key JSON to playlist format",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
-  },
-  "license": "MIT"
+  }
 }
