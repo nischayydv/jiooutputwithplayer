@@ -9,12 +9,15 @@ const DASH_PROXY = "https://dash.vodep39240327.workers.dev/?url=";
 const LOGO_BASE =
   "https://jiotv.catchup.cdn.jio.com/dare_images/images/";
 
-function formatDisplayName(rawName) {
-  return rawName
-    .replace(/_/g, " ")                  // History_HD → History HD
-    .replace(/TV(\d+)/g, " TV$1 ")       // CNBCTV18Prime → CNBC TV18 Prime
+/**
+ * Convert raw channel name into human-readable form
+ */
+function formatDisplayName(name) {
+  return name
+    .replace(/_/g, " ")                  // Sun_TV_HD → Sun TV HD
+    .replace(/TV(\d+)/g, " TV$1 ")       // CNBCTV18 → CNBC TV18
     .replace(/([a-z])([A-Z])/g, "$1 $2") // PrimeNews → Prime News
-    .replace(/\s+/g, " ")                // remove double spaces
+    .replace(/\s+/g, " ")                // clean extra spaces
     .trim();
 }
 
@@ -31,12 +34,15 @@ async function main() {
   const result = Object.entries(raw).map(([id, data]) => {
     const { kid, key, url } = data;
 
-    // Extract raw channel name
+    // Name used ONLY for stream URL
     let rawName = url.split("/bpk-tv/")[1].split("/")[0];
     rawName = rawName.replace("_BTS", "");
 
+    // Name used for logo & display (remove _MOB only here)
+    const cleanName = rawName.replace(/_MOB$/i, "");
+
     // Display name
-    const displayName = formatDisplayName(rawName);
+    const displayName = formatDisplayName(cleanName);
 
     // Extract cookie
     const cookieMatch = url.match(/__hdnea__=([^&]+)/);
@@ -52,14 +58,14 @@ async function main() {
     return {
       name: displayName,
       id,
-      logo: `${LOGO_BASE}${rawName}.png`,
+      logo: `${LOGO_BASE}${cleanName}.png`,
       group: "Jio+",
       link: DASH_PROXY + finalUrl
     };
   });
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 4));
-  console.log("✅ output.json generated");
+  console.log("✅ output.json generated successfully");
 }
 
 main().catch(err => {
