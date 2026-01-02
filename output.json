@@ -49,9 +49,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Travel_XP_HD_BTS/output/index.mpd?name=Travel_XP_HD&keyId=021bd4635e8653bca6830adaca183b14&key=035ec746d6ee0d39cb7cb15963da8424&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Cartoon Network Tel MOB",
+        "name": "Cartoon Network Tel",
         "id": "166",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Tel_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Tel.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Cartoon_Network_Tel_MOB/WDVLive/index.mpd?name=Cartoon_Network_Tel_MOB&keyId=3e5ec63e26c1520380236941c3848f68&key=f944e7ee9260a9e6239170db4d6fa713&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -112,9 +112,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/ET_Now_BTS/output/index.mpd?name=ET_Now&keyId=e05bb7fccc9c541ebc3d180fb3004d1a&key=fd8ff50906c9b384c894ec084f8b6aee&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Discovery Channel Eng MOB",
+        "name": "Discovery Channel Eng",
         "id": "242",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Eng_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Eng.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Channel_Eng_MOB/WDVLive/index.mpd?name=Discovery_Channel_Eng_MOB&keyId=1025acf964795689982726e2d16a73c5&key=d88575df3e3d1adb7a82da65f0000aa6&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -175,9 +175,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sanskar_BTS/output/index.mpd?name=Sanskar&keyId=dfff473e173152108d5690b30587cfae&key=84de2917bc930b575a6bb2af4e315f8d&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "sonic Tamil MOB",
+        "name": "sonic Tamil",
         "id": "290",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Tamil_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/sonic_Tamil.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/sonic_Tamil_MOB/WDVLive/index.mpd?name=sonic_Tamil_MOB&keyId=a62d4ca4ef095564bede0fe525956634&key=5e34a5126bfe29c18947046513f18cce&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -700,9 +700,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Turbo_BTS/output/index.mpd?name=Discovery_Turbo&keyId=f6975ebba1045165a9223a938b9e7974&key=2f63fb18980f4b851fc222a71ed85bbd&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Pogo Tam MOB",
+        "name": "Pogo Tam",
         "id": "542",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tam_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tam.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Pogo_Tam_MOB/WDVLive/index.mpd?name=Pogo_Tam_MOB&keyId=ace8ad8aaff258edb8743bea9825d2d2&key=89bbc643fba2d72470ee30668ec749c9&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -721,16 +721,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Nick_Hindi_BTS/output/index.mpd?name=Nick_Hindi&keyId=2fc128a8dcc751829ec7ed9c678ecb6f&key=95f49d83ad11868e15e64baf5dec62ac&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Nick Jr Hin MOB",
+        "name": "Nick Jr Hin",
         "id": "548",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Jr_Hin_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Jr_Hin.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Nick_Jr_Hin_MOB/WDVLive/index.mpd?name=Nick_Jr_Hin_MOB&keyId=aa04d2fbafc55891b207f51d7ecca936&key=5fd9741321499a18954304ef9c57ab8a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Discovery Kids Tamil MOB",
+        "name": "Discovery Kids Tamil",
         "id": "550",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Kids_Tamil.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Kids_Tamil_MOB/WDVLive/index.mpd?name=Discovery_Kids_Tamil_MOB&keyId=527df4ddb18a530db7565fff6c06263f&key=b4ca95df03a230ba8e23a7226de77d05&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -742,30 +742,30 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Kids_2_BTS/output/index.mpd?name=Discovery_Kids_2&keyId=e921b8507a5e5cd1bb4433b3fd1f5e0a&key=037835bab43e7ef4a41a97c638cd9c1d&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Chintu TV MOB",
+        "name": "Chintu TV",
         "id": "555",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Chintu_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Chintu_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Chintu_TV_MOB/WDVLive/index.mpd?name=Chintu_TV_MOB&keyId=a46e79ba85825859bd81b6d6f1e451b8&key=816ace41b743231f2eb3fd550a4696cf&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Kochu TV MOB",
+        "name": "Kochu TV",
         "id": "556",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Kochu_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Kochu_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Kochu_TV_MOB/WDVLive/index.mpd?name=Kochu_TV_MOB&keyId=0302f2d727d6513eb9ee9d88b42dab6c&key=ddefe13383dcb3e287aff9eaf7855390&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Chutti TV MOB",
+        "name": "Chutti TV",
         "id": "557",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Chutti_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Chutti_TV_MOB/WDVLive/index.mpd?name=Chutti_TV_MOB&keyId=b6c198ef16ac5c5f8891dade7f781773&key=2be7b4ae3582fc2531dc1c36dd0fe91a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Kushi TV MOB",
+        "name": "Kushi TV",
         "id": "558",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Kushi_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Kushi_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Kushi_TV_MOB/WDVLive/index.mpd?name=Kushi_TV_MOB&keyId=36762890a11b5ed9bc633626b7b8fca1&key=2b7b31848c9047e232543b883bc59a1a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -819,9 +819,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Animal_Planet_Hindi_BTS/output/index.mpd?name=Animal_Planet_Hindi&keyId=ead5a173062a584c85fcdfcfdda3ddf5&key=4c799a57db355c7cdfbdbf2ad39ec7fe&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Animal Planet Eng MOB",
+        "name": "Animal Planet Eng",
         "id": "567",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_Eng_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_Eng.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Animal_Planet_Eng_MOB/WDVLive/index.mpd?name=Animal_Planet_Eng_MOB&keyId=93a12e9cebdc56b99051d55e82690d93&key=d66ee3eba75de38ecd1cb9cc37885a3d&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -854,9 +854,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/TLC_Hindi_BTS/output/index.mpd?name=TLC_Hindi&keyId=cb10cf5381f958029431b19f62a81959&key=a6a51457e5aac769a422d8341a1c8dde&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Discovery Channel Ben MOB",
+        "name": "Discovery Channel Ben",
         "id": "573",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Ben_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Ben.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Channel_Ben_MOB/WDVLive/index.mpd?name=Discovery_Channel_Ben_MOB&keyId=d16b43f3e1be5634914a63e9a23f7e20&key=dd103236260a3dfe448871a671cba00e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -875,16 +875,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Channel_Hindi_BTS/output/index.mpd?name=Discovery_Channel_Hindi&keyId=e7de2a4993765d2cb71d07dfcb9c4c55&key=67a3c25d5e236c1caea9c9b312a40dd3&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Discovery Channel Tel MOB",
+        "name": "Discovery Channel Tel",
         "id": "576",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Tel_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Tel.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Discovery_Channel_Tel_MOB/WDVLive/index.mpd?name=Discovery_Channel_Tel_MOB&keyId=57f1b2ef267e54e2a01f65d172f2cdca&key=cbfb990d2343da92cf4daa209963d0b6&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "History 18 Telugu MOB",
+        "name": "History 18 Telugu",
         "id": "577",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Telugu_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Telugu.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/History_18_Telugu_MOB/WDVLive/index.mpd?name=History_18_Telugu_MOB&keyId=0d0ccc0ee7e8560b93b3d3e639ea32b0&key=7beacbf5552dc159e5373fba32e2e5ea&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -896,9 +896,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/History_18_Hindi_BTS/output/index.mpd?name=History_18_Hindi&keyId=b43ef2b054a755bba3fd492a183fdfcd&key=76cda2b69a89ff7643e3ab2b3b326350&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "History 18 Tamil MOB",
+        "name": "History 18 Tamil",
         "id": "579",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Tamil_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Tamil.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/History_18_Tamil_MOB/WDVLive/index.mpd?name=History_18_Tamil_MOB&keyId=0f9371552c9b5d4ea83b97b455285d97&key=d8751df166bb3b7f5b995268f4a77f67&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1281,9 +1281,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Assam_Talks_BTS/output/index.mpd?name=Assam_Talks&keyId=c4408d66d5b052b38745765dc5d99c18&key=1650cf6b3d9bec36c3cdcec4af42da6e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sun News MOB",
+        "name": "Sun News",
         "id": "676",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_News_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_News.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_News_MOB/WDVLive/index.mpd?name=Sun_News_MOB&keyId=e8b0b960d29658969d74da596e2787e1&key=9b4051847231c9e1fd717df5aa5e0eea&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1295,16 +1295,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Puthiya_Thalimurai_BTS/output/index.mpd?name=Puthiya_Thalimurai&keyId=adfefde497a8588d8f976761abd76e41&key=9d40d8ce521b0f6bd702bc23ed53abbf&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Udaya Movies MOB",
+        "name": "Udaya Movies",
         "id": "678",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Movies_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Movies.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Udaya_Movies_MOB/WDVLive/index.mpd?name=Udaya_Movies_MOB&keyId=0e2bcf67277a54bfadc2f021a3b6f816&key=390ac32b44931c6eb64c81e6615f9711&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sun Life MOB",
+        "name": "Sun Life",
         "id": "682",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Life_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Life.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_Life_MOB/WDVLive/index.mpd?name=Sun_Life_MOB&keyId=03fff2c1ecea574b98da00b05c2a0be9&key=41670b42142fa8ba6bd3cf9fc2ae8cf5&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1316,9 +1316,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Raj_Digital_Plus_BTS/output/index.mpd?name=Raj_Digital_Plus&keyId=a1636627c85a5129974eea2d1a917604&key=2453963a306c012223944e13790908de&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Gemini Life MOB",
+        "name": "Gemini Life",
         "id": "684",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Life_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Life.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gemini_Life_MOB/WDVLive/index.mpd?name=Gemini_Life_MOB&keyId=89887cc3539757c4802bb3f4b1bed42f&key=9d02cba14dd041059c40bf3070d7f32e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1428,9 +1428,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Makkal_TV_BTS/output/index.mpd?name=Makkal_TV&keyId=5820dafb03805d3b90ac277ea54814c7&key=f8dfe0926904d421373ba029cb3e1ef7&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Adithya TV MOB",
+        "name": "Adithya TV",
         "id": "709",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Adithya_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Adithya_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Adithya_TV_MOB/WDVLive/index.mpd?name=Adithya_TV_MOB&keyId=b7d2d1228b275e219c9cdb282038d4c3&key=d75d95afc4a181803d2188456a052477&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1540,9 +1540,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Salaam_TV_BTS/output/index.mpd?name=Salaam_TV&keyId=fad21db03fe058aa97460d6cccb22656&key=fce32ccd0867aa688e81fbabcc4b2fb5&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Gemini Comedy MOB",
+        "name": "Gemini Comedy",
         "id": "729",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Comedy_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Comedy.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gemini_Comedy_MOB/WDVLive/index.mpd?name=Gemini_Comedy_MOB&keyId=a39a9699a2e354ce9312d2933d8bf83c&key=4bc2a11372933c408bc27b11d832d836&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1554,9 +1554,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Kairali_WE_TV_BTS/output/index.mpd?name=Kairali_WE_TV&keyId=48eebab77b4d50c79e39ae25460683c4&key=95c65c81fa2c7ca40163139e1a34c8c4&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Udaya Comedy MOB",
+        "name": "Udaya Comedy",
         "id": "733",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Comedy_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Comedy.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Udaya_Comedy_MOB/WDVLive/index.mpd?name=Udaya_Comedy_MOB&keyId=3fad8a9054e3594591e0d66b1fdf63b5&key=5937bb76b8e4ca9ccc15832644a816b2&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1624,16 +1624,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Raj_Music_Kannada_BTS/output/index.mpd?name=Raj_Music_Kannada&keyId=13c93012e8895b44a32535d84ce4e218&key=8acfe4d1ff01800dfdb6c8f2df3bf617&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Udaya Music MOB",
+        "name": "Udaya Music",
         "id": "744",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Music_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_Music.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Udaya_Music_MOB/WDVLive/index.mpd?name=Udaya_Music_MOB&keyId=60b098f49c995f8ab01f093833ffa7ea&key=21fa4199211c7f0f682d8ef6c2198683&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Surya Music MOB",
+        "name": "Surya Music",
         "id": "747",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Music_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Music.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Surya_Music_MOB/WDVLive/index.mpd?name=Surya_Music_MOB&keyId=6dec22d787845c828b7e7b08c4036cf6&key=b46904ae1a6fcae716b8e8cdf78de849&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1890,9 +1890,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Tunes_6_BTS/output/index.mpd?name=Tunes_6&keyId=b0c237a374cd57bb80afeec16f6ab680&key=08dab9f7242dbd95f1e494a96f6fdad8&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Samachar Plus MOB",
+        "name": "Samachar Plus",
         "id": "804",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Samachar_Plus_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Samachar_Plus.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Samachar_Plus_MOB/WDVLive/index.mpd?name=Samachar_Plus_MOB&keyId=cf7890a6268e5fde8c31165d985429fb&key=dd97f93c5eed1c46be22f69e513e74d2&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -1946,9 +1946,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Cartoon_Network_Hindi_BTS/output/index.mpd?name=Cartoon_Network_Hindi&keyId=ea48cf7b24dd54dd98c369626b9ad105&key=ee5778d627dfae2c2affc02d76e8db6c&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Cartoon Network Tam MOB",
+        "name": "Cartoon Network Tam",
         "id": "817",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Tam_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Tam.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Cartoon_Network_Tam_MOB/WDVLive/index.mpd?name=Cartoon_Network_Tam_MOB&keyId=553fc9bdb0115b24b23d04be203d1b9d&key=a220f0a32aaee1e6989ef8e6a6728fe1&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -2184,58 +2184,58 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Ten2_HD_BTS/output/index.mpd?name=Ten2_HD&keyId=7771cca923225ce08887cbae764e72c6&key=67d80b71f02d2cd1e4e0ee7b9b752841&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "KTV HD MOB",
+        "name": "KTV HD",
         "id": "894",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/KTV_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/KTV_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/KTV_HD_MOB/WDVLive/index.mpd?name=KTV_HD_MOB&keyId=ba9bfe750a56514e9c63c456fad1e428&key=e0ca0ee9dbaac2942753d928b92824c5&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sun Music HD MOB",
+        "name": "Sun Music HD",
         "id": "895",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Music_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Music_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_Music_HD_MOB/WDVLive/index.mpd?name=Sun_Music_HD_MOB&keyId=fa0c0f2dd6ce50208b77e16976e38d90&key=7f83a8e5178b6562d81968886fc3fe8a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sun TV HD MOB",
+        "name": "Sun TV HD",
         "id": "896",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_TV_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_TV_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_TV_HD_MOB/WDVLive/index.mpd?name=Sun_TV_HD_MOB&keyId=f415c124a07c595b97c43cc9a96ded30&key=59e6c93d4fe43353b34a71eb87185aaa&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Gemini TV HD MOB",
+        "name": "Gemini TV HD",
         "id": "897",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_TV_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_TV_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gemini_TV_HD_MOB/WDVLive/index.mpd?name=Gemini_TV_HD_MOB&keyId=0d0317b57c045842a700483a46f1212e&key=cd9f07a43e89b32bf3af1bfc7e6c84b2&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Gemini Music HD MOB",
+        "name": "Gemini Music HD",
         "id": "898",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Music_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Music_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gemini_Music_HD_MOB/WDVLive/index.mpd?name=Gemini_Music_HD_MOB&keyId=548c049108f95c3b81ea4befee5a3aae&key=5d3e71b422b7cc2f782c87f600e5a5b4&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Gemini Movies HD MOB",
+        "name": "Gemini Movies HD",
         "id": "899",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Movies_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gemini_Movies_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gemini_Movies_HD_MOB/WDVLive/index.mpd?name=Gemini_Movies_HD_MOB&keyId=e166773b30c55dd38872ca4d62104729&key=b9bc45e3b1e9fa91ad36243588f80c9e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Surya HD MOB",
+        "name": "Surya HD",
         "id": "900",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Surya_HD_MOB/WDVLive/index.mpd?name=Surya_HD_MOB&keyId=b7d2d1228b275e219c9cdb282038d4c3&key=d75d95afc4a181803d2188456a052477&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Udaya HD MOB",
+        "name": "Udaya HD",
         "id": "901",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Udaya_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Udaya_HD_MOB/WDVLive/index.mpd?name=Udaya_HD_MOB&keyId=5963c7fcc1ce54938540061b917fbbe2&key=8510d16d9d340e1cc0bf5ebf6fa547a4&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -2436,9 +2436,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/DNN_BTS/output/index.mpd?name=DNN&keyId=b32c2bcbc821592bb0e509699ea77ed1&key=16a072cc7f8615a034abca8ceaaec4c5&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Arre MOB",
+        "name": "Arre",
         "id": "963",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Arre_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Arre.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Arre_MOB/WDVLive/index.mpd?name=Arre_MOB&keyId=ecebe6ebc07751bca001e504899f5c49&key=a5b5ee59e450a59fb430da4e3bdc68b2&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -2674,16 +2674,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/CN_HD_English_BTS/output/index.mpd?name=CN_HD_English&keyId=7004383267415ffaa3e40865671fbb97&key=65634619d6be76985ae2283b47d96ac1&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "CN HD Telugu MOB",
+        "name": "CN HD Telugu",
         "id": "1080",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Telugu_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Telugu.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/CN_HD_Telugu_MOB/WDVLive/index.mpd?name=CN_HD_Telugu_MOB&keyId=dfc915acb96f52e780f1d10e641a68ed&key=55f3cc761f9590761ee2b829be86cd45&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "CN HD Tamil MOB",
+        "name": "CN HD Tamil",
         "id": "1081",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Tamil_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_Tamil.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/CN_HD_Tamil_MOB/WDVLive/index.mpd?name=CN_HD_Tamil_MOB&keyId=83997e19da7f5b15a53c150730a91f31&key=605f420d088427d95b55275eb174b734&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3171,9 +3171,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Hare_Krsna_Pravachan_BTS/output/index.mpd?name=Hare_Krsna_Pravachan&keyId=4a16e3fb19745a099018c008e7eb461d&key=62510e56c4b6f6664beccc904c1e7b95&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Animal Planet Tam HD MOB",
+        "name": "Animal Planet Tam HD",
         "id": "1219",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_Tam_HD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_Tam_HD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Animal_Planet_Tam_HD_MOB/WDVLive/index.mpd?name=Animal_Planet_Tam_HD_MOB&keyId=ff6ca7035f7d51609b43960e3b88fc94&key=e2c4e61e32022885f6ccb9215b60dad4&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3220,16 +3220,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Hi_Dost_BTS/output/index.mpd?name=Hi_Dost&keyId=61d040ff04145a7aa7df02a97b64b6ae&key=6d5cbe6bd0d1aefe7647c404f692fae5&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sonic Telugu MOB",
+        "name": "Sonic Telugu",
         "id": "1242",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Telugu_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Telugu.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sonic_Telugu_MOB/WDVLive/index.mpd?name=Sonic_Telugu_MOB&keyId=c5f797fac3ce566c990a2057c99a81c2&key=a65755a4676a6c2e9d803d5611954b26&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sonic Kannada MOB",
+        "name": "Sonic Kannada",
         "id": "1243",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Kannada_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Kannada.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sonic_Kannada_MOB/WDVLive/index.mpd?name=Sonic_Kannada_MOB&keyId=6cf1045c66ec5b1681bbf34a0971ab86&key=f0c1edef4ea6b46c8ec0fe04627d8afb&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3374,9 +3374,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/B4U_Bhojpuri_BTS/output/index.mpd?name=B4U_Bhojpuri&keyId=dae6c19d7db756cc96f107fda55b0bef&key=3f161c5a3bbab46bcc1b876384a1210e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "HHDL MOB",
+        "name": "HHDL",
         "id": "1315",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/HHDL_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/HHDL.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/HHDL_MOB/WDVLive/index.mpd?name=HHDL_MOB&keyId=9fd8dbf0d7825c26a6100b0c2df58ac2&key=8b05010810a93fbc4d09036017b4e1ea&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3388,16 +3388,16 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Gujarati_Cinema_BTS/output/index.mpd?name=Colors_Gujarati_Cinema&keyId=cd976004d8345aa0be2034488fc8356f&key=55de685c871df127cfb17f25b1259421&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Colors Infinity SD MOB",
+        "name": "Colors Infinity SD",
         "id": "1325",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Infinity_SD_MOB/WDVLive/index.mpd?name=Colors_Infinity_SD_MOB&keyId=0182f1ff69df5a58b5073d1bbc24fa8f&key=1aaad81489784cef4402f4e1e6fea612&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Colors Marathi SD MOB",
+        "name": "Colors Marathi SD",
         "id": "1326",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Marathi_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Marathi_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Marathi_SD_MOB/WDVLive/index.mpd?name=Colors_Marathi_SD_MOB&keyId=d60fa0c54e625171a1f6594a41b727c6&key=deca7c933b6aa0c968c2620c46130360&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3430,9 +3430,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/National_Geographic_HD_BTS/output/index.mpd?name=National_Geographic_HD&keyId=4b006dd7965e5777a7fa33dd636c2e5d&key=179f796bdf11b750bebd469a3aeae1d0&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Top Tutor MOB",
+        "name": "Top Tutor",
         "id": "1337",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Top_Tutor_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Top_Tutor.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Top_Tutor_MOB/WDVLive/index.mpd?name=Top_Tutor_MOB&keyId=2ee2b70f7b355c71b0b8a9479ff0d557&key=8b7bf0dc4993660cb4ec4b7bdb6f3526&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3444,23 +3444,23 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/RT_TV_BTS/output/index.mpd?name=RT_TV&keyId=7b0b8bd12bf45247a0329ea5b2e93694&key=6fc5ebb2fee0b0cdda2855098125fc8b&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sonic Malayalam MOB",
+        "name": "Sonic Malayalam",
         "id": "1344",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Malayalam_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Malayalam.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sonic_Malayalam_MOB/WDVLive/index.mpd?name=Sonic_Malayalam_MOB&keyId=e5cee6f28393554c94ed38b0d8a65b88&key=ed3a9586ece4ac6cd147e784e0ce1fc6&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sonic Bangla MOB",
+        "name": "Sonic Bangla",
         "id": "1345",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Bangla_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Bangla.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sonic_Bangla_MOB/WDVLive/index.mpd?name=Sonic_Bangla_MOB&keyId=5d26427bf9a85808bd34848fa7ae1f8a&key=aac720bb73a9db2b2cb64763d5f8942b&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sonic Marathi MOB",
+        "name": "Sonic Marathi",
         "id": "1346",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Marathi_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sonic_Marathi.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sonic_Marathi_MOB/WDVLive/index.mpd?name=Sonic_Marathi_MOB&keyId=c329e1a4429c525cad86d4346efcd68a&key=7c21c2f9cddaa5c084bf1d5b02fb4610&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3472,30 +3472,30 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Wow_Cinema_One_BTS/output/index.mpd?name=Wow_Cinema_One&keyId=82e7c7e0b6275791b688caa7b0f08254&key=80bfb0d57dcf77c2f2be65a8911ff360&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Colors SD MOB",
+        "name": "Colors SD",
         "id": "1368",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_SD_MOB/WDVLive/index.mpd?name=Colors_SD_MOB&keyId=5727d2eea91255a3abcad8bf6e97cee6&key=66e77c7cf5c7f654c68f05455f44fea0&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Colors Bangla SD MOB",
+        "name": "Colors Bangla SD",
         "id": "1369",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Bangla_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Bangla_SD_MOB/WDVLive/index.mpd?name=Colors_Bangla_SD_MOB&keyId=4b4ea22699965dcfa9883cb7994d7202&key=9107a849f44403873bffedac6a6cabdc&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Colors Kannada SD MOB",
+        "name": "Colors Kannada SD",
         "id": "1370",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Kannada_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Kannada_SD_MOB/WDVLive/index.mpd?name=Colors_Kannada_SD_MOB&keyId=de4783d8f87058fea520b87c28c9fd3e&key=e10e2c975c0771fa74cc2f70d5bac140&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Colors Tamil MOB",
+        "name": "Colors Tamil",
         "id": "1371",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Tamil.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Tamil_MOB/WDVLive/index.mpd?name=Colors_Tamil_MOB&keyId=0729280e18465f30a437fae60b0de8c7&key=f5db301fe989d18fc10d29c836a3a2c7&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3563,9 +3563,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Jai_Maharashtra_BTS/output/index.mpd?name=Jai_Maharashtra&keyId=56314b95a1fb5a588702a3d227312045&key=685b27ec4cd2878ba4b14af3d6e9bb78&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony SD MOB",
+        "name": "Sony SD",
         "id": "1396",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sony_SD_MOB/WDVLive/index.mpd?name=Sony_SD_MOB&keyId=041a2752e99f5c6c8d4835fe221e16de&key=73bc7d13c8beb7aa7f798e717544e005&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3612,9 +3612,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/evidya_11_BTS/output/index.mpd?name=evidya_11&keyId=546ed5a377305824afe9df46f45f5c6c&key=013afab33805efe112cd24b35aee2955&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Song Dew TV MOB",
+        "name": "Song Dew TV",
         "id": "1411",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SongDew_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SongDew_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SongDew_TV_MOB/WDVLive/index.mpd?name=SongDew_TV_MOB&keyId=9e9a52da03e65869a7615120172ac135&key=74fbbf422b23c53c05294ce1a0ecacaa&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3689,9 +3689,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Velukkudi_Discourses_BTS/output/index.mpd?name=Velukkudi_Discourses&keyId=281fad820c2a5c3b90e92b606f7b9a79&key=591a47f5f8491eb86366b049fb5bedbf&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "TV Teacher MOB",
+        "name": "TV Teacher",
         "id": "1447",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/TV_Teacher_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/TV_Teacher.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/TV_Teacher_MOB/WDVLive/index.mpd?name=TV_Teacher_MOB&keyId=a71bbb82a1b2576c96338db4a085f5a0&key=828f3e7cb7eda52bee2658cce9078b9f&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3738,9 +3738,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gurkebaani_BTS/output/index.mpd?name=Gurkebaani&keyId=e1bdc4f2e37b5bc49b7b43514fd252db&key=6c3e1de54982b5956bb7c58b75df6b72&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "History TV18 SD MOB",
+        "name": "History TV18 SD",
         "id": "1471",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_TV18_SD_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/History_TV18_SD.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/History_TV18_SD_MOB/WDVLive/index.mpd?name=History_TV18_SD_MOB&keyId=fc8bda6bd61954d69d7d07a31d1af972&key=0555191ba0e5e4a58f13ef9fec2adcb1&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3815,9 +3815,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/evidya_12_BTS/output/index.mpd?name=evidya_12&keyId=c6b9833f03615f9ba8ffb58bce7223f2&key=7d75088597e7078b05f15fe7d924ac85&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Radhe Krishna TV MOB",
+        "name": "Radhe Krishna TV",
         "id": "1537",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/RadheKrishna_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/RadheKrishna_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/RadheKrishna_TV_MOB/WDVLive/index.mpd?name=RadheKrishna_TV_MOB&keyId=5e7a7028021d5a1ab0a7d93dc6eb058a&key=255b87c9bae5c01790fe259d1f01ef03&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3829,9 +3829,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Samachar_Today_BTS/output/index.mpd?name=Samachar_Today&keyId=91d84c35cf8e5983bb0a2e84293ba79b&key=b1d0e2606f1df2b2275c992ec602d72e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Tute MOB",
+        "name": "Tute",
         "id": "1542",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Tute_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Tute.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Tute_MOB/WDVLive/index.mpd?name=Tute_MOB&keyId=372e0a66571451b29b5db0666a7b9e3c&key=c60c68b85e2d561be412bcaeac0abe65&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3843,9 +3843,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Subharti_BTS/output/index.mpd?name=Subharti&keyId=1cf9d3f7d06d5d2a99049bbd2891cf5e&key=d003165e39d0c3952ee183cfecf8cc03&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Punjab School TV MOB",
+        "name": "Punjab School TV",
         "id": "1545",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Punjab_School_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Punjab_School_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Punjab_School_TV_MOB/WDVLive/index.mpd?name=Punjab_School_TV_MOB&keyId=3b99045d338a5a03b6cb0a255c39fb5e&key=2591dca28a5ea2e173dca660474e440e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3892,30 +3892,30 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sristi_TV_BTS/output/index.mpd?name=Sristi_TV&keyId=efd25811325e5091b2f235f33bcff433&key=e49231ed9758cea47b66ae85c809c130&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Himshiksha Higher MOB",
+        "name": "Himshiksha Higher",
         "id": "1563",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Himshiksha_Higher_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Himshiksha_Higher.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Himshiksha_Higher_MOB/WDVLive/index.mpd?name=Himshiksha_Higher_MOB&keyId=fb6c30323b0a5bf786eed800752cb67c&key=acfc7226d032b93424ea535c8433c45a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Himshiksha Vocational MOB",
+        "name": "Himshiksha Vocational",
         "id": "1564",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Himshiksha_Vocational_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Himshiksha_Vocational.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Himshiksha_Vocational_MOB/WDVLive/index.mpd?name=Himshiksha_Vocational_MOB&keyId=f816e6a1e2f85d1888d1cf6372fc3f21&key=65e59f6d39135a22f90404ceb9bc5ba6&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "AP BIE ARTS MOB",
+        "name": "AP BIE ARTS",
         "id": "1565",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/AP_BIE_ARTS_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/AP_BIE_ARTS.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/AP_BIE_ARTS_MOB/WDVLive/index.mpd?name=AP_BIE_ARTS_MOB&keyId=9b34cc4c68a857b087460ac3ac3de53b&key=2eab0090b128836f3cff4993330b665c&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "AP CIE SIVE MOB",
+        "name": "AP CIE SIVE",
         "id": "1567",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/AP_CIE_SIVE_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/AP_CIE_SIVE.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/AP_CIE_SIVE_MOB/WDVLive/index.mpd?name=AP_CIE_SIVE_MOB&keyId=42ab2a08bfae5707b1ada9be784a0079&key=5b74bc240df77094293adf98a39806d2&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3927,9 +3927,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Atmadarshan_TV_BTS/output/index.mpd?name=Atmadarshan_TV&keyId=56a43954631c59c5b6d1135b538e3059&key=0e386ccb5d9b59f0ac338318f6e83200&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Lifology MOB",
+        "name": "Lifology",
         "id": "1593",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Lifology_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Lifology.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Lifology_MOB/WDVLive/index.mpd?name=Lifology_MOB&keyId=fd4929c4db99513d80ef26c1e56e6b14&key=8cce9e0f60796941def01fbbc8f9079b&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -3969,9 +3969,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Tara_TV_BTS/output/index.mpd?name=Tara_TV&keyId=332681a7786d53af91f915abc075d4c9&key=7228dd7266d1a2f477a0bed64090be19&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Omnicuris MOB",
+        "name": "Omnicuris",
         "id": "1614",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Omnicuris_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Omnicuris.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Omnicuris_MOB/WDVLive/index.mpd?name=Omnicuris_MOB&keyId=59583b1fd7e153e19ce618c8f62ef639&key=afbe055bf64b37048eb8dac22c0819ad&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4067,9 +4067,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Colors_Bangla_Cinema_BTS/output/index.mpd?name=Colors_Bangla_Cinema&keyId=6f7b7241b2935a909d389fe318e5baaa&key=65783311644973348f359dc154bb41db&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Surya Comedy MOB",
+        "name": "Surya Comedy",
         "id": "1662",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Comedy_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Comedy.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Surya_Comedy_MOB/WDVLive/index.mpd?name=Surya_Comedy_MOB&keyId=6f89e312c5e051f4b0baada7c375662a&key=34ab95577a62df1b54ba527f0995281e&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4095,9 +4095,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Rongeen_TV_BTS/output/index.mpd?name=Rongeen_TV&keyId=cc73820e5c7b56c4b71dea3ff244fd5d&key=a0beb46ec64d13391a6120c307ecd6b7&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sun Bangla MOB",
+        "name": "Sun Bangla",
         "id": "1669",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Bangla_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Bangla.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_Bangla_MOB/WDVLive/index.mpd?name=Sun_Bangla_MOB&keyId=549bd1347c255c15affa44e0607a9c05&key=1922fbb1ebad4a7ba0f3c77c67b34f89&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4109,23 +4109,23 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/C_News_Bharat_BTS/output/index.mpd?name=C_News_Bharat&keyId=f823c185dd9c5538bdeb4f7cc2d330f7&key=0259b4ff7a1c6bb4116b0de5b1546aca&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Gyanvani 2 MOB",
+        "name": "Gyanvani 2",
         "id": "1672",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gyanvani_2_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Gyanvani_2.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gyanvani_2_MOB/WDVLive/index.mpd?name=Gyanvani_2_MOB&keyId=32c6035950165c0ca537c5c279168dd2&key=d489207c003d63daa13b0e9a5bc6c034&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "PTD Chhattisgarrh MOB",
+        "name": "PTD Chhattisgarrh",
         "id": "1673",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/PTD_Chhattisgarrh_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/PTD_Chhattisgarrh.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/PTD_Chhattisgarrh_MOB/WDVLive/index.mpd?name=PTD_Chhattisgarrh_MOB&keyId=852c2ff7da7451ae9f66a0949a31540c&key=065aa548d38d7294688e8567b88f3554&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "ESG MOB",
+        "name": "ESG",
         "id": "1675",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ESG_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ESG.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/ESG_MOB/WDVLive/index.mpd?name=ESG_MOB&keyId=fd394297a4e4506facadbf76d9b25d8e&key=5d9b666a144f99acfcb1fb535c897614&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4221,9 +4221,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/India_News_Gujarat_BTS/output/index.mpd?name=India_News_Gujarat&keyId=d129cdbacb6a5af2923597d132cbf6d5&key=58f9802ef762e4f6c63a6c05f7f46a58&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Surya Movies MOB",
+        "name": "Surya Movies",
         "id": "1754",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Movies_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Surya_Movies.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Surya_Movies_MOB/WDVLive/index.mpd?name=Surya_Movies_MOB&keyId=dab921b8ef8d55b6945c3c69209fd6e4&key=c5141f92f8b9961399078c273aed219f&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4270,9 +4270,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_4_HD_Telugu_BTS/output/index.mpd?name=Ten_4_HD_Telugu&keyId=5c99be9d8ed654bf90cab4538ece3a5e&key=ddafcea98ffa2a1840607ab60c467846&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Hoopla Kids TV MOB",
+        "name": "Hoopla Kids TV",
         "id": "1780",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Hoopla_Kids_TV_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Hoopla_Kids_TV.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Hoopla_Kids_TV_MOB/WDVLive/index.mpd?name=Hoopla_Kids_TV_MOB&keyId=cbd95fc6a9e453f0a47c5765a6a50124&key=533ca1d6c99de08b40e3110329ed077a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4333,9 +4333,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Green_Chillies_TV_BTS/output/index.mpd?name=Green_Chillies_TV&keyId=b2918958cf7f50dabf4f693e37f94d60&key=78ec5e5cca4c9e2b77f8ba814452ac61&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "SVBC MOB",
+        "name": "SVBC",
         "id": "1850",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SVBC_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SVBC.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SVBC_MOB/WDVLive/index.mpd?name=SVBC_MOB&keyId=524228f225c3561294beb73045712eeb&key=1fd3437547213b939d98a52f10671490&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4389,9 +4389,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/7X_Music_BTS/output/index.mpd?name=7X_Music&keyId=1ada03e07ec55e219053dac84dcc4e40&key=7f0357b078f2b3dd683fbf6d1d182135&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Pogo Tel MOB",
+        "name": "Pogo Tel",
         "id": "1883",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tel_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Tel.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Pogo_Tel_MOB/WDVLive/index.mpd?name=Pogo_Tel_MOB&keyId=e00e2372e66056d99642254b92bcf53e&key=70dc00e600e4a4c16afc0148ad2e8881&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -4865,9 +4865,9 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Vande_Bharat_BTS/output/index.mpd?name=Vande_Bharat&keyId=ea496bd9c0de5682b8ae6d1044271723&key=689e2cc4ff5b2736253f4a51adb94e9a&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sun Marathi MOB",
+        "name": "Sun Marathi",
         "id": "2424",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Marathi_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sun_Marathi.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Sun_Marathi_MOB/WDVLive/index.mpd?name=Sun_Marathi_MOB&keyId=f5caecf34c8f5453bbbd851a2dc424ed&key=b600a7ad14865399462b9eeb3a10e72c&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
@@ -6342,44 +6342,44 @@
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/Gujarat_Wild_TV_BTS/output/index.mpd?name=Gujarat_Wild_TV&keyId=7bb78c97648859a4a43322fff6d39929&key=0bee9e4ab52b2e6b127b3ceaa74c8e70&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony LIV Sports 1 MOB",
+        "name": "Sony LIV Sports 1",
         "id": "3372",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_1_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_1.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SonyLIV_Sports_1_MOB/WDVLive/index.mpd?name=SonyLIV_Sports_1_MOB&keyId=4e4c5dba5bfe5a7c9338bc086eb80379&key=b8e8932f440084e1d2b705fa52eef94b&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony LIV Sports 2 MOB",
+        "name": "Sony LIV Sports 2",
         "id": "3373",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_2_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_2.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SonyLIV_Sports_2_MOB/WDVLive/index.mpd?name=SonyLIV_Sports_2_MOB&keyId=ef24516ae38b50d18049343cd1cd998a&key=eb4810ec250a1795a0019dba7881ff45&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony LIV Sports 3 MOB",
+        "name": "Sony LIV Sports 3",
         "id": "3374",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_3_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_3.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SonyLIV_Sports_3_MOB/WDVLive/index.mpd?name=SonyLIV_Sports_3_MOB&keyId=3afa887864e6545aa006db21aeb39054&key=6b8cce271f3cd923d0df32d45b44f6df&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony LIV Sports 4 Tamil MOB",
+        "name": "Sony LIV Sports 4 Tamil",
         "id": "3397",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_4_Tamil_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_4_Tamil.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SonyLIV_Sports_4_Tamil_MOB/WDVLive/index.mpd?name=SonyLIV_Sports_4_Tamil_MOB&keyId=9f266ceda9555faf8b40c586ac40406a&key=92f9a1ca4c16545db65ad0578bd1baa3&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony LIV Sports 4 Telugu MOB",
+        "name": "Sony LIV Sports 4 Telugu",
         "id": "3398",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_4_Telugu_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_4_Telugu.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SonyLIV_Sports_4_Telugu_MOB/WDVLive/index.mpd?name=SonyLIV_Sports_4_Telugu_MOB&keyId=4d39c423d72a5f1ca5df1de110c80422&key=572a9370c22c8b5d741352ebf8f68721&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
     {
-        "name": "Sony LIV Sports 5 MOB",
+        "name": "Sony LIV Sports 5",
         "id": "3399",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_5_MOB.png",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyLIV_Sports_5.png",
         "group": "Jio+",
         "link": "https://dash.vodep39240327.workers.dev/?url=https://jiotvpllive.cdn.jio.com/bpk-tv/SonyLIV_Sports_5_MOB/WDVLive/index.mpd?name=SonyLIV_Sports_5_MOB&keyId=cee8550bf50b569d8ad2ed0c5264f0d2&key=565a95f1c332c03534e1e5fcc1ff9a8b&cookie=__hdnea__=st=1767316440~exp=1767402840~acl=/*~hmac=1e690d1994f1431fefcef3e73528014bf1d9f163793c8324278238795c2dee3a"
     },
