@@ -11,9 +11,10 @@ const LOGO_BASE =
 
 function formatDisplayName(rawName) {
   return rawName
-    .replace(/TV(\d+)/g, " TV$1")        // TV18 → TV18 (with space)
-    .replace(/HD$/g, " HD")              // ColorsHD → Colors HD
+    .replace(/_/g, " ")                  // History_HD → History HD
+    .replace(/TV(\d+)/g, " TV$1 ")       // CNBCTV18Prime → CNBC TV18 Prime
     .replace(/([a-z])([A-Z])/g, "$1 $2") // PrimeNews → Prime News
+    .replace(/\s+/g, " ")                // remove double spaces
     .trim();
 }
 
@@ -30,11 +31,11 @@ async function main() {
   const result = Object.entries(raw).map(([id, data]) => {
     const { kid, key, url } = data;
 
-    // Extract raw channel name (used for logo & stream)
+    // Extract raw channel name
     let rawName = url.split("/bpk-tv/")[1].split("/")[0];
     rawName = rawName.replace("_BTS", "");
 
-    // Human-readable name
+    // Display name
     const displayName = formatDisplayName(rawName);
 
     // Extract cookie
