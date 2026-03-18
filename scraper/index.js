@@ -6,20 +6,6 @@ const INPUT_URL =
 const OUTPUT_FILE = "output.json";
 
 const DASH_PROXY = "https://dash.vodep39240327.workers.dev/?url=";
-const LOGO_BASE =
-  "https://jiotv.catchup.cdn.jio.com/dare_images/images/";
-
-/**
- * Convert raw channel name into human-readable form
- */
-function formatDisplayName(name) {
-  return name
-    .replace(/_/g, " ")                  // Sun_TV_HD → Sun TV HD
-    .replace(/TV(\d+)/g, " TV$1 ")       // CNBCTV18 → CNBC TV18
-    .replace(/([a-z])([A-Z])/g, "$1 $2") // PrimeNews → Prime News
-    .replace(/\s+/g, " ")                // clean extra spaces
-    .trim();
-}
 
 async function main() {
   console.log("📥 Fetching remote stream.json...");
@@ -32,17 +18,14 @@ async function main() {
   const raw = await res.json();
 
   const result = Object.entries(raw).map(([id, data]) => {
-    const { kid, key, url } = data;
+    const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
-    // Name used ONLY for stream URL
+    // Name used ONLY for the stream URL parameter (e.g., CNBC_Tv18_Prime_HD)
     let rawName = url.split("/bpk-tv/")[1].split("/")[0];
     rawName = rawName.replace("_BTS", "");
 
-    // Name used for logo & display (remove _MOB only here)
-    const cleanName = rawName.replace(/_MOB$/i, "");
-
-    // Display name
-    const displayName = formatDisplayName(cleanName);
+    // Display name comes directly from the JSON 'channel_name' field
+    const displayName = channel_name || rawName.replace(/_/g, " ");
 
     // Extract cookie
     const cookieMatch = url.match(/__hdnea__=([^&]+)/);
@@ -58,8 +41,8 @@ async function main() {
     return {
       name: displayName,
       id,
-      logo: `${LOGO_BASE}${cleanName}.png`,
-      group: "Jio+",
+      logo: tvg_logo,      // Use logo URL from JSON
+      group: group_title,  // Use group title from JSON
       link: DASH_PROXY + finalUrl
     };
   });
