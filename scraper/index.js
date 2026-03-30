@@ -1,11 +1,11 @@
 import fs from "fs";
 
 const INPUT_URL =
-  "https://raw.githubusercontent.com/vaathala00/jo/main/stream.json";
+  "hhttps://github.com/nischayydv/jiojson/blob/main/stream.json";
 
 const OUTPUT_FILE = "output.json";
 
-const DASH_PROXY = "https://dash.vodep39240327.workers.dev/?url=";
+const DASH_PROXY = "https://jioplayer.pages.dev/?url=";
 
 async function main() {
   console.log("📥 Fetching remote stream.json...");
