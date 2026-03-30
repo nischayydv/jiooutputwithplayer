@@ -1,7 +1,6 @@
 import fs from "fs";
 
-const INPUT_URL =
-  "https://github.com/nischayydv/jiojson/main/stream.json";
+const INPUT_URL = "https://github.com/nischayydv/jiojson/main/stream.json";
 
 const OUTPUT_FILE = "output.json";
 
