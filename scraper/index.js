@@ -1,53 +1,93 @@
 import fs from "fs";
 
 const INPUT_URL = "https://raw.githubusercontent.com/nischayydv/jiojson/main/stream.json";
-
 const OUTPUT_FILE = "output.json";
-
 const DASH_PROXY = "https://jioplayer.pages.dev/?url=";
+
+async function fetchKey(kid, key) {
+  const keyUrl = kid + ":" + key;
+  try {
+    const res = await fetch(keyUrl);
+    if (!res.ok) {
+      console.warn(`⚠️  Failed to fetch key from ${keyUrl}: ${res.status}`);
+      return null;
+    }
+    const text = await res.text();
+    return text.trim();
+  } catch (err) {
+    console.warn(`⚠️  Error fetching key from ${keyUrl}: ${err.message}`);
+    return null;
+  }
+}
+
+async function fetchMpd(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      console.warn(`⚠️  Failed to fetch MPD from ${url}: ${res.status}`);
+      return null;
+    }
+    const text = await res.text();
+    return text.trim();
+  } catch (err) {
+    console.warn(`⚠️  Error fetching MPD from ${url}: ${err.message}`);
+    return null;
+  }
+}
 
 async function main() {
   console.log("📥 Fetching remote stream.json...");
-
   const res = await fetch(INPUT_URL);
   if (!res.ok) {
     throw new Error(`Failed to fetch JSON: ${res.status}`);
   }
-
   const raw = await res.json();
 
-  const result = Object.entries(raw).map(([id, data]) => {
-    const { kid, key, url, group_title, tvg_logo, channel_name } = data;
+  const entries = Object.entries(raw);
+  console.log(`🔄 Processing ${entries.length} channels...`);
 
-    // Name used ONLY for the stream URL parameter (e.g., CNBC_Tv18_Prime_HD)
-    let rawName = url.split("/bpk-tv/")[1].split("/")[0];
-    rawName = rawName.replace("_BTS", "");
+  const result = await Promise.all(
+    entries.map(async ([id, data]) => {
+      const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
-    // Display name comes directly from the JSON 'channel_name' field
-    const displayName = channel_name || rawName.replace(/_/g, " ");
+      const fetchedKey = await fetchKey(kid, key);
+      const realStreamUrl = await fetchMpd(url);
 
-    // Extract cookie
-    const cookieMatch = url.match(/__hdnea__=([^&]+)/);
-    const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
+      const displayName = channel_name || id;
 
-    const finalUrl =
-      `${url.split("?")[0]}` +
-      `?name=${encodeURIComponent(rawName)}` +
-      `&keyId=${kid}` +
-      `&key=${key}` +
-      (cookie ? `&cookie=${cookie}` : "");
+      let rawName = channel_name
+        ? channel_name.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_]/g, "")
+        : String(id);
+      rawName = rawName.replace("_BTS", "");
 
-    return {
-      name: displayName,
-      id,
-      logo: tvg_logo,      // Use logo URL from JSON
-      group: group_title,  // Use group title from JSON
-      link: DASH_PROXY + finalUrl
-    };
-  });
+      const cookieMatch = realStreamUrl
+        ? realStreamUrl.match(/__hdnea__=([^&]+)/)
+        : null;
+      const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
+
+      const baseUrl = realStreamUrl ? realStreamUrl.split("?")[0] : url;
+
+      const finalUrl =
+        `${baseUrl}` +
+        `?name=${encodeURIComponent(rawName)}` +
+        `&keyId=${encodeURIComponent(kid + ":" + key)}` +
+        `&key=${encodeURIComponent(fetchedKey || "")}` +
+        (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
+
+      console.log(`  ✅ ${displayName} (id: ${id})`);
+
+      return {
+        name: displayName,
+        id,
+        logo: tvg_logo,
+        group: group_title,
+        link: DASH_PROXY + finalUrl
+      };
+    })
+  );
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 4));
-  console.log("✅ output.json generated successfully");
+  console.log(`\n✅ output.json generated successfully with ${result.length} channels`);
 }
 
 main().catch(err => {
