@@ -20,17 +20,18 @@ async function fetchKey(kid, key) {
   }
 }
 
-async function fetchMpd(url) {
+async function getFinalUrl(url) {
   try {
-    const res = await fetch(url);
+    // manual redirect to capture the final redirected URL
+    const res = await fetch(url, { redirect: "follow" });
     if (!res.ok) {
-      console.warn(`⚠️  Failed to fetch MPD from ${url}: ${res.status}`);
+      console.warn(`⚠️  Failed to resolve URL ${url}: ${res.status}`);
       return null;
     }
-    const text = await res.text();
-    return text.trim();
+    // res.url gives the final URL after all redirects
+    return res.url;
   } catch (err) {
-    console.warn(`⚠️  Error fetching MPD from ${url}: ${err.message}`);
+    console.warn(`⚠️  Error resolving URL ${url}: ${err.message}`);
     return null;
   }
 }
@@ -50,11 +51,11 @@ async function main() {
     entries.map(async ([id, data]) => {
       const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
-      // Fetch real stream URL from MPD proxy endpoint
-      const realStreamUrl = await fetchMpd(url);
+      // Follow redirects to get the real final stream URL
+      const realStreamUrl = await getFinalUrl(url);
 
       if (!realStreamUrl) {
-        console.warn(`⚠️  Skipping id=${id}, no stream URL returned`);
+        console.warn(`⚠️  Skipping id=${id}, could not resolve final URL`);
         return null;
       }
 
