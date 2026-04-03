@@ -50,22 +50,31 @@ async function main() {
     entries.map(async ([id, data]) => {
       const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
-      const fetchedKey = await fetchKey(kid, key);
+      // Fetch real stream URL from MPD proxy endpoint
       const realStreamUrl = await fetchMpd(url);
 
-      const displayName = channel_name || id;
+      if (!realStreamUrl) {
+        console.warn(`⚠️  Skipping id=${id}, no stream URL returned`);
+        return null;
+      }
 
-      let rawName = channel_name
-        ? channel_name.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_]/g, "")
-        : String(id);
+      // Extract rawName from real URL: /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
+      const bpkMatch = realStreamUrl.match(/\/bpk-tv\/([^/]+)\//);
+      let rawName = bpkMatch ? bpkMatch[1] : String(id);
       rawName = rawName.replace("_BTS", "");
 
-      const cookieMatch = realStreamUrl
-        ? realStreamUrl.match(/__hdnea__=([^&]+)/)
-        : null;
+      // Display name from JSON channel_name field
+      const displayName = channel_name || rawName.replace(/_/g, " ");
+
+      // Fetch the actual decryption key
+      const fetchedKey = await fetchKey(kid, key);
+
+      // Extract __hdnea__ cookie from real stream URL
+      const cookieMatch = realStreamUrl.match(/__hdnea__=([^&|]+)/);
       const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
 
-      const baseUrl = realStreamUrl ? realStreamUrl.split("?")[0] : url;
+      // Base URL without query string
+      const baseUrl = realStreamUrl.split("?")[0];
 
       const finalUrl =
         `${baseUrl}` +
@@ -86,8 +95,11 @@ async function main() {
     })
   );
 
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 4));
-  console.log(`\n✅ output.json generated successfully with ${result.length} channels`);
+  // Filter out any nulls from failed channels
+  const filtered = result.filter(Boolean);
+
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 4));
+  console.log(`\n✅ output.json generated with ${filtered.length} channels`);
 }
 
 main().catch(err => {
