@@ -1,21 +1,17 @@
-import fs from "fs";
+\import fs from "fs";
 
 const INPUT_URL = "https://raw.githubusercontent.com/nischayydv/jiojson/main/stream.json";
 const OUTPUT_FILE = "output.json";
 const DASH_PROXY = "https://jioplayer.pages.dev/?url=";
 
-const HEADERS = {
-  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-  "Accept": "*/*",
-  "Accept-Language": "en-US,en;q=0.9",
-  "Referer": "https://jioplayer.pages.dev/",
-  "Origin": "https://jioplayer.pages.dev"
-};
-
 async function fetchKey(kid, key) {
   const keyUrl = kid + ":" + key;
   try {
-    const res = await fetch(keyUrl, { headers: HEADERS });
+    const res = await fetch(keyUrl, { redirect: "manual" });
+    // If it's a redirect, grab Location header
+    if (res.status >= 300 && res.status < 400) {
+      return res.headers.get("location")?.trim() || null;
+    }
     if (!res.ok) {
       console.warn(`⚠️  Failed to fetch key from ${keyUrl}: ${res.status}`);
       return null;
@@ -30,25 +26,23 @@ async function fetchKey(kid, key) {
 
 async function getFinalUrl(url) {
   try {
-    const res = await fetch(url, {
-      redirect: "follow",
-      headers: HEADERS
-    });
+    const res = await fetch(url, { redirect: "manual" });
 
-    // 451 or other error — try extracting Location header manually
-    if (!res.ok) {
-      console.warn(`⚠️  Status ${res.status} for ${url}`);
-      // Some workers return redirect in body as plain text URL
-      const body = await res.text();
-      const urlMatch = body.match(/https?:\/\/[^\s"'<>]+/);
-      if (urlMatch) {
-        console.log(`  📌 Extracted URL from body: ${urlMatch[0]}`);
-        return urlMatch[0];
+    // If redirected — grab the Location header (the real stream URL)
+    if (res.status >= 300 && res.status < 400) {
+      const location = res.headers.get("location");
+      if (location) {
+        console.log(`  📌 Redirected to: ${location}`);
+        return location;
       }
+    }
+
+    if (!res.ok) {
+      console.warn(`⚠️  Failed to resolve URL ${url}: ${res.status}`);
       return null;
     }
 
-    // res.url = final URL after redirects
+    // No redirect — final URL is res.url
     return res.url;
   } catch (err) {
     console.warn(`⚠️  Error resolving URL ${url}: ${err.message}`);
@@ -58,7 +52,7 @@ async function getFinalUrl(url) {
 
 async function main() {
   console.log("📥 Fetching remote stream.json...");
-  const res = await fetch(INPUT_URL, { headers: HEADERS });
+  const res = await fetch(INPUT_URL);
   if (!res.ok) {
     throw new Error(`Failed to fetch JSON: ${res.status}`);
   }
@@ -71,15 +65,13 @@ async function main() {
     entries.map(async ([id, data]) => {
       const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
-      // Follow redirects (with browser headers) to get the real final stream URL
+      // Manually catch redirect → get real final stream URL from Location header
       const realStreamUrl = await getFinalUrl(url);
 
       if (!realStreamUrl) {
         console.warn(`⚠️  Skipping id=${id}, could not resolve final URL`);
         return null;
       }
-
-      console.log(`  🔗 Resolved: ${realStreamUrl}`);
 
       // Extract rawName from real URL: /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
       const bpkMatch = realStreamUrl.match(/\/bpk-tv\/([^/]+)\//);
