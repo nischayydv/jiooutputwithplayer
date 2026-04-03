@@ -9,17 +9,22 @@ async function fetchKey(kid, key) {
   try {
     const res = await fetch(keyUrl, { redirect: "manual" });
     if (res.status >= 300 && res.status < 400) {
-      return res.headers.get("location")?.trim() || null;
+      const location = res.headers.get("location");
+      if (location) return await fetchKey("https", location.replace("https://", "//"));
     }
     if (!res.ok) {
       console.warn(`⚠️  Failed to fetch key from ${keyUrl}: ${res.status}`);
-      return null;
+      return { kid: null, k: null };
     }
-    const text = await res.text();
-    return text.trim();
+    const json = await res.json();
+    const keyObj = json.keys?.[0];
+    return {
+      kid: keyObj?.kid || null,
+      k: keyObj?.k || null
+    };
   } catch (err) {
     console.warn(`⚠️  Error fetching key from ${keyUrl}: ${err.message}`);
-    return null;
+    return { kid: null, k: null };
   }
 }
 
@@ -72,7 +77,8 @@ async function main() {
 
       const displayName = channel_name || rawName.replace(/_/g, " ");
 
-      const fetchedKey = await fetchKey(kid, key);
+      // Fetch real kid and k from key endpoint
+      const { kid: realKid, k: realKey } = await fetchKey(kid, key);
 
       const cookieMatch = realStreamUrl.match(/__hdnea__=([^&|]+)/);
       const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
@@ -82,11 +88,11 @@ async function main() {
       const finalUrl =
         `${baseUrl}` +
         `?name=${encodeURIComponent(rawName)}` +
-        `&keyId=${encodeURIComponent(kid + ":" + key)}` +
-        `&key=${encodeURIComponent(fetchedKey || "")}` +
+        `&keyId=${encodeURIComponent(realKid || "")}` +
+        `&key=${encodeURIComponent(realKey || "")}` +
         (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
 
-      console.log(`  ✅ ${displayName} (id: ${id})`);
+      console.log(`  ✅ ${displayName} (id: ${id}) | kid: ${realKid}`);
 
       return {
         name: displayName,
