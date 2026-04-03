@@ -1,4 +1,4 @@
-\import fs from "fs";
+const fs = require("fs");
 
 const INPUT_URL = "https://raw.githubusercontent.com/nischayydv/jiojson/main/stream.json";
 const OUTPUT_FILE = "output.json";
@@ -8,7 +8,6 @@ async function fetchKey(kid, key) {
   const keyUrl = kid + ":" + key;
   try {
     const res = await fetch(keyUrl, { redirect: "manual" });
-    // If it's a redirect, grab Location header
     if (res.status >= 300 && res.status < 400) {
       return res.headers.get("location")?.trim() || null;
     }
@@ -27,8 +26,6 @@ async function fetchKey(kid, key) {
 async function getFinalUrl(url) {
   try {
     const res = await fetch(url, { redirect: "manual" });
-
-    // If redirected — grab the Location header (the real stream URL)
     if (res.status >= 300 && res.status < 400) {
       const location = res.headers.get("location");
       if (location) {
@@ -36,13 +33,10 @@ async function getFinalUrl(url) {
         return location;
       }
     }
-
     if (!res.ok) {
       console.warn(`⚠️  Failed to resolve URL ${url}: ${res.status}`);
       return null;
     }
-
-    // No redirect — final URL is res.url
     return res.url;
   } catch (err) {
     console.warn(`⚠️  Error resolving URL ${url}: ${err.message}`);
@@ -65,7 +59,6 @@ async function main() {
     entries.map(async ([id, data]) => {
       const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
-      // Manually catch redirect → get real final stream URL from Location header
       const realStreamUrl = await getFinalUrl(url);
 
       if (!realStreamUrl) {
@@ -73,22 +66,17 @@ async function main() {
         return null;
       }
 
-      // Extract rawName from real URL: /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
       const bpkMatch = realStreamUrl.match(/\/bpk-tv\/([^/]+)\//);
       let rawName = bpkMatch ? bpkMatch[1] : String(id);
       rawName = rawName.replace("_BTS", "");
 
-      // Display name from JSON channel_name field
       const displayName = channel_name || rawName.replace(/_/g, " ");
 
-      // Fetch the actual decryption key
       const fetchedKey = await fetchKey(kid, key);
 
-      // Extract __hdnea__ cookie from real stream URL
       const cookieMatch = realStreamUrl.match(/__hdnea__=([^&|]+)/);
       const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
 
-      // Base URL without query string
       const baseUrl = realStreamUrl.split("?")[0];
 
       const finalUrl =
