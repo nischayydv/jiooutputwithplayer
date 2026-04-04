@@ -17,40 +17,48 @@ async function main() {
 
   console.log(`🔄 Processing ${channels.length} channels...`);
 
-  const result = channels.map((channel) => {
-    const { id, name, logo, category, mpd, token, drm } = channel;
+  const result = channels
+    .filter((channel) => {
+      if (!channel.mpd) {
+        console.warn(`⚠️  Skipping channel id=${channel.id || "?"} — no mpd field`);
+        return false;
+      }
+      return true;
+    })
+    .map((channel) => {
+      const { id, name, logo, category, mpd, token, drm } = channel;
 
-    // Extract rawName from mpd URL: /bpk-tv/CNBC_Awaaz_BTS/
-    const bpkMatch = mpd.match(/\/bpk-tv\/([^/]+)\//);
-    let rawName = bpkMatch ? bpkMatch[1] : String(id);
-    rawName = rawName.replace("_BTS", "");
+      // Extract rawName from mpd URL: /bpk-tv/CNBC_Awaaz_BTS/
+      const bpkMatch = mpd.match(/\/bpk-tv\/([^/]+)\//);
+      let rawName = bpkMatch ? bpkMatch[1] : String(id);
+      rawName = rawName.replace("_BTS", "");
 
-    // Get keyId and key directly from drm object (no fetching needed)
-    const drmEntries = Object.entries(drm || {});
-    const realKid = drmEntries.length > 0 ? drmEntries[0][0] : "";
-    const realKey = drmEntries.length > 0 ? drmEntries[0][1] : "";
+      // Get keyId and key directly from drm object (no fetching needed)
+      const drmEntries = Object.entries(drm || {});
+      const realKid = drmEntries.length > 0 ? drmEntries[0][0] : "";
+      const realKey = drmEntries.length > 0 ? drmEntries[0][1] : "";
 
-    // token is already the cookie value
-    const cookie = token || "";
+      // token is already the cookie value
+      const cookie = token || "";
 
-    // Build jioplayer link
-    const playerUrl =
-      DASH_PROXY +
-      encodeURIComponent(mpd) +
-      `&keyId=${encodeURIComponent(realKid)}` +
-      `&key=${encodeURIComponent(realKey)}` +
-      (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
+      // Build jioplayer link
+      const playerUrl =
+        DASH_PROXY +
+        encodeURIComponent(mpd) +
+        `&keyId=${encodeURIComponent(realKid)}` +
+        `&key=${encodeURIComponent(realKey)}` +
+        (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
 
-    console.log(`  ✅ ${name} (id: ${id}) | kid: ${realKid}`);
+      console.log(`  ✅ ${name} (id: ${id}) | kid: ${realKid}`);
 
-    return {
-      name,
-      id,
-      logo,
-      group: category,
-      link: playerUrl
-    };
-  });
+      return {
+        name,
+        id,
+        logo,
+        group: category,
+        link: playerUrl
+      };
+    });
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 4));
   console.log(`\n✅ output.json generated with ${result.length} channels`);
