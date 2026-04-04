@@ -12,55 +12,49 @@ async function main() {
   }
   const raw = await res.json();
 
-  const channels = Array.isArray(raw) ? raw : Object.values(raw);
+  const channels = Array.isArray(raw) ? Object.entries({ ...raw }) : Object.entries(raw);
   console.log(`🔄 Processing ${channels.length} channels...`);
 
   const result = channels
-    .filter((channel) => {
-      if (!channel.url && !channel.mpd) {
-        console.warn(`⚠️  Skipping channel id=${channel.id || "?"} — no url/mpd field`);
+    .filter(([id, channel]) => {
+      if (!channel.url) {
+        console.warn(`⚠️  Skipping id=${id} — no url field`);
         return false;
       }
       return true;
     })
-    .map((channel) => {
-      const { id, name, logo, category, drm } = channel;
+    .map(([id, channel]) => {
+      const { kid, key, url, group_title, tvg_logo, channel_name } = channel;
 
-      // Use url field (has cookie) or fallback to mpd
-      const fullUrl = channel.url || channel.mpd;
-
-      // Split MPD base and cookie query string
-      const [mpdUrl, queryString] = fullUrl.split("?");
+      // Split MPD base URL and query string
+      const [mpdUrl, queryString] = url.split("?");
 
       // Extract __hdnea__ cookie from query string
       const hdneaMatch = queryString ? queryString.match(/(__hdnea__=[^&]+)/) : null;
       const cookie = hdneaMatch ? hdneaMatch[1] : "";
 
-      // Extract rawName from mpd URL: /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
+      // Extract rawName from /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
       const bpkMatch = mpdUrl.match(/\/bpk-tv\/([^/]+)\//);
       let rawName = bpkMatch ? bpkMatch[1] : String(id);
       rawName = rawName.replace("_BTS", "");
 
-      // Get keyId and key directly from drm object
-      const drmEntries = Object.entries(drm || {});
-      const realKid = drmEntries.length > 0 ? drmEntries[0][0] : "";
-      const realKey = drmEntries.length > 0 ? drmEntries[0][1] : "";
+      const displayName = channel_name || rawName.replace(/_/g, " ");
 
-      // Build jioplayer link
+      // kid and key are directly in the JSON — no fetching needed
       const playerUrl =
         DASH_PROXY +
         encodeURIComponent(mpdUrl) +
-        `&keyId=${encodeURIComponent(realKid)}` +
-        `&key=${encodeURIComponent(realKey)}` +
+        `&keyId=${encodeURIComponent(kid)}` +
+        `&key=${encodeURIComponent(key)}` +
         (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
 
-      console.log(`  ✅ ${name} (id: ${id}) | kid: ${realKid}`);
+      console.log(`  ✅ ${displayName} (id: ${id}) | kid: ${kid}`);
 
       return {
-        name,
+        name: displayName,
         id,
-        logo,
-        group: category,
+        logo: tvg_logo,
+        group: group_title,
         link: playerUrl
       };
     });
