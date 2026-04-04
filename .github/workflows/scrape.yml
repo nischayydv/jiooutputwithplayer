@@ -1,69 +1,55 @@
-import fs from "fs";
+name: Fetch and Update Stream JSON
 
-const INPUT_URL = "https://raw.githubusercontent.com/nischayydv/jiojson/main/stream.json";
-const OUTPUT_FILE = "output.json";
-const DASH_PROXY = "https://jioplayer.pages.dev/?url=";
+on:
+  schedule:
+    - cron: "*/10 * * * *" # Every 10 minutes
+  workflow_dispatch:
 
-async function main() {
-  console.log("📥 Fetching remote stream.json...");
-  const res = await fetch(INPUT_URL);
-  if (!res.ok) {
-    throw new Error(`Failed to fetch JSON: ${res.status}`);
-  }
-  const raw = await res.json();
+jobs:
+  fetch-json:
+    runs-on: ubuntu-latest
 
-  const channels = Array.isArray(raw) ? Object.entries({ ...raw }) : Object.entries(raw);
-  console.log(`🔄 Processing ${channels.length} channels...`);
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Upgraded to v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          ref: main
 
-  const result = channels
-    .filter(([id, channel]) => {
-      if (!channel.url) {
-        console.warn(`⚠️  Skipping id=${id} — no url field`);
-        return false;
-      }
-      return true;
-    })
-    .map(([id, channel]) => {
-      const { kid, key, url, group_title, tvg_logo, channel_name } = channel;
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # Upgraded to v4
+        with:
+          node-version: "24"      # Upgraded to Node 24
 
-      // Split MPD base URL and query string
-      const [mpdUrl, queryString] = url.split("?");
+      - name: Install dependencies
+        run: |
+          cd scraper
+          npm install
 
-      // Extract __hdnea__ cookie from query string
-      const hdneaMatch = queryString ? queryString.match(/(__hdnea__=[^&]+)/) : null;
-      const cookie = hdneaMatch ? hdneaMatch[1] : "";
+      - name: Run fetch script
+        run: |
+          cd scraper
+          npm start
 
-      // Extract rawName from /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
-      const bpkMatch = mpdUrl.match(/\/bpk-tv\/([^/]+)\//);
-      let rawName = bpkMatch ? bpkMatch[1] : String(id);
-      rawName = rawName.replace("_BTS", "");
+      - name: Commit and push output.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
-      const displayName = channel_name || rawName.replace(/_/g, " ");
+          # This line uses the built-in GITHUB_TOKEN automatically
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git pull --rebase origin main
 
-      // kid and key are directly in the JSON — no fetching needed
-      const playerUrl =
-        DASH_PROXY +
-        encodeURIComponent(mpdUrl) +
-        `&keyId=${encodeURIComponent(kid)}` +
-        `&key=${encodeURIComponent(key)}` +
-        (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
+          # Make sure your script actually creates 'output.json' in the scraper folder
+          cp scraper/output.json output.json
+          git add output.json
 
-      console.log(`  ✅ ${displayName} (id: ${id}) | kid: ${kid}`);
-
-      return {
-        name: displayName,
-        id,
-        logo: tvg_logo,
-        group: group_title,
-        link: playerUrl
-      };
-    });
-
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 4));
-  console.log(`\n✅ output.json generated with ${result.length} channels`);
-}
-
-main().catch(err => {
-  console.error("❌ Error:", err.message);
-  process.exit(1);
-});
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "📥 Updated output.json"
+            git push origin main
+          else
+            echo "No changes to push."
+          fi
