@@ -508,7 +508,7 @@
         "id": "73",
         "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png",
         "group": "Entertainment",
-        "link": "https://jioplayer.pages.dev/?url=https%3A%2F%2Fjiotvioslive.cdn.jio.com%2Fbpk-tv%2FSonySAB_BTS%2Foutput%2Findex.mpd&keyId=0ed103b742333873dd6500941a9bb7ed&key=33867eed1d8ee5b39f5fbc72631d7037&cookie=__hdnea__%3Dst%3D1775301880~exp%3D1775388280~acl%3D%2F*~hmac%3D468049b62169c0d43d4b2d956a24e016844866a247ce13eca906f406565f781b"
+        "link": "https://jioplayer.pages.dev/?url=https%3A%2F%2Fjiotvioslive.cdn.jio.com%2Fbpk-tv%2FSonySAB_BTS%2Foutput%2Findex.mpd&keyId=0449d593e6bb5a81a7ab5c5986e5940b&key=c0abc7e159389031e53a4b8dfa53d141&cookie=__hdnea__%3Dst%3D1775301880~exp%3D1775388280~acl%3D%2F*~hmac%3D468049b62169c0d43d4b2d956a24e016844866a247ce13eca906f406565f781b"
     },
     {
         "name": "And TV HD",
@@ -8005,7 +8005,7 @@
         "id": "1144",
         "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/SonyMAX1.png",
         "group": "English",
-        "link": "https://jioplayer.pages.dev/?url=https%3A%2F%2Fjiotvioslive.cdn.jio.com%2Fbpk-tv%2FSonyMAX1_BTS%2Foutput%2Findex.mpd&keyId=7d1893ecbbef5872a37dfadbbc304bb9&key=dcbcecbf01a838c3336d732a40296efb&cookie=__hdnea__%3Dst%3D1775301880~exp%3D1775388280~acl%3D%2F*~hmac%3D468049b62169c0d43d4b2d956a24e016844866a247ce13eca906f406565f781b"
+        "link": "https://jioplayer.pages.dev/?url=https%3A%2F%2Fjiotvioslive.cdn.jio.com%2Fbpk-tv%2FSonyMAX1_BTS%2Foutput%2Findex.mpd&keyId=2a1a2b85777a564ba74e8f38ab063def&key=695f02cdce09b8e5aa7ab9fdeb596bbe&cookie=__hdnea__%3Dst%3D1775301880~exp%3D1775388280~acl%3D%2F*~hmac%3D468049b62169c0d43d4b2d956a24e016844866a247ce13eca906f406565f781b"
     },
     {
         "name": "Sony Pix HD",
