@@ -56,7 +56,6 @@ async function main() {
     throw new Error(`Failed to fetch JSON: ${res.status}`);
   }
   const raw = await res.json();
-
   const entries = Object.entries(raw);
   console.log(`🔄 Processing ${entries.length} channels...`);
 
@@ -64,30 +63,35 @@ async function main() {
     entries.map(async ([id, data]) => {
       const { kid, key, url, group_title, tvg_logo, channel_name } = data;
 
+      // Step 1: Get real stream URL via redirect
       const realStreamUrl = await getFinalUrl(url);
-
       if (!realStreamUrl) {
         console.warn(`⚠️  Skipping id=${id}, could not resolve final URL`);
         return null;
       }
 
+      // Step 2: Extract rawName from /bpk-tv/NAME_BTS/
       const bpkMatch = realStreamUrl.match(/\/bpk-tv\/([^/]+)\//);
       let rawName = bpkMatch ? bpkMatch[1] : String(id);
       rawName = rawName.replace("_BTS", "");
 
       const displayName = channel_name || rawName.replace(/_/g, " ");
 
-      // Fetch real kid and k from key endpoint
+      // Step 3: Fetch real kid and k from key endpoint JSON
       const { kid: realKid, k: realKey } = await fetchKey(kid, key);
 
-      const cookieMatch = realStreamUrl.match(/__hdnea__=([^&|]+)/);
-      const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
+      // Step 4: Extract __hdnea__ token from real stream URL
+      const hdneaMatch = realStreamUrl.match(/(__hdnea__=[^&|]+)/);
+      const cookie = hdneaMatch ? hdneaMatch[1] : "";
 
-      const baseUrl = realStreamUrl.split("?")[0];
+      // Step 5: Clean MPD base URL (no query string)
+      const mpdUrl = realStreamUrl.split("?")[0];
 
-      const finalUrl =
-        `${baseUrl}` +
-        `?name=${encodeURIComponent(rawName)}` +
+      // Step 6: Build jioplayer link
+      // Format: https://jioplayer.pages.dev/?url=MPD&keyId=KID&key=KEY&cookie=COOKIE
+      const playerUrl =
+        DASH_PROXY +
+        encodeURIComponent(mpdUrl) +
         `&keyId=${encodeURIComponent(realKid || "")}` +
         `&key=${encodeURIComponent(realKey || "")}` +
         (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
@@ -99,13 +103,12 @@ async function main() {
         id,
         logo: tvg_logo,
         group: group_title,
-        link: DASH_PROXY + finalUrl
+        link: playerUrl
       };
     })
   );
 
   const filtered = result.filter(Boolean);
-
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 4));
   console.log(`\n✅ output.json generated with ${filtered.length} channels`);
 }
