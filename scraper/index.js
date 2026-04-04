@@ -12,9 +12,12 @@ async function main() {
   }
   const raw = await res.json();
 
-  console.log(`🔄 Processing ${raw.length} channels...`);
+  // Handle both array and object formats
+  const channels = Array.isArray(raw) ? raw : Object.values(raw);
 
-  const result = raw.map((channel) => {
+  console.log(`🔄 Processing ${channels.length} channels...`);
+
+  const result = channels.map((channel) => {
     const { id, name, logo, category, mpd, token, drm } = channel;
 
     // Extract rawName from mpd URL: /bpk-tv/CNBC_Awaaz_BTS/
