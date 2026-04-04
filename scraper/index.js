@@ -12,39 +12,44 @@ async function main() {
   }
   const raw = await res.json();
 
-  // Handle both array and object formats
   const channels = Array.isArray(raw) ? raw : Object.values(raw);
-
   console.log(`🔄 Processing ${channels.length} channels...`);
 
   const result = channels
     .filter((channel) => {
-      if (!channel.mpd) {
-        console.warn(`⚠️  Skipping channel id=${channel.id || "?"} — no mpd field`);
+      if (!channel.url && !channel.mpd) {
+        console.warn(`⚠️  Skipping channel id=${channel.id || "?"} — no url/mpd field`);
         return false;
       }
       return true;
     })
     .map((channel) => {
-      const { id, name, logo, category, mpd, token, drm } = channel;
+      const { id, name, logo, category, drm } = channel;
 
-      // Extract rawName from mpd URL: /bpk-tv/CNBC_Awaaz_BTS/
-      const bpkMatch = mpd.match(/\/bpk-tv\/([^/]+)\//);
+      // Use url field (has cookie) or fallback to mpd
+      const fullUrl = channel.url || channel.mpd;
+
+      // Split MPD base and cookie query string
+      const [mpdUrl, queryString] = fullUrl.split("?");
+
+      // Extract __hdnea__ cookie from query string
+      const hdneaMatch = queryString ? queryString.match(/(__hdnea__=[^&]+)/) : null;
+      const cookie = hdneaMatch ? hdneaMatch[1] : "";
+
+      // Extract rawName from mpd URL: /bpk-tv/CNBC_Tv18_Prime_HD_BTS/
+      const bpkMatch = mpdUrl.match(/\/bpk-tv\/([^/]+)\//);
       let rawName = bpkMatch ? bpkMatch[1] : String(id);
       rawName = rawName.replace("_BTS", "");
 
-      // Get keyId and key directly from drm object (no fetching needed)
+      // Get keyId and key directly from drm object
       const drmEntries = Object.entries(drm || {});
       const realKid = drmEntries.length > 0 ? drmEntries[0][0] : "";
       const realKey = drmEntries.length > 0 ? drmEntries[0][1] : "";
 
-      // token is already the cookie value
-      const cookie = token || "";
-
       // Build jioplayer link
       const playerUrl =
         DASH_PROXY +
-        encodeURIComponent(mpd) +
+        encodeURIComponent(mpdUrl) +
         `&keyId=${encodeURIComponent(realKid)}` +
         `&key=${encodeURIComponent(realKey)}` +
         (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
