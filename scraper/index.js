@@ -1,85 +1,116 @@
-const axios = require("axios");
-const fs = require("fs");
+import fs from "fs";
 
-const STREAM_URL = "https://raw.githubusercontent.com/alex4528x/m3u/refs/heads/main/jtv.m3u";
-const OUTPUT_FILE = "stream.json";
+const INPUT_URL = "https://raw.githubusercontent.com/nischayydv/jiojson/main/stream.json";
+const OUTPUT_FILE = "output.json";
+const DASH_PROXY = "https://jioplayer.pages.dev/?url=";
 
-async function fetchAndSaveJson() {
+async function fetchKey(kid, key) {
+  const keyUrl = kid + ":" + key;
   try {
-    const response = await axios.get(STREAM_URL, { responseType: "text" });
-    const lines = response.data.split("\n");
-
-    const result = {};
-
-    let currentKid = null;
-    let currentKey = null;
-    let currentTvgId = null;
-    let currentGroup = null;
-    let currentLogo = null;
-    let currentChannel = null;
-    let currentUserAgent = null;
-
-    for (const line of lines) {
-      const trimmed = line.trim();
-
-      // Extract info from #EXTINF
-      if (trimmed.startsWith("#EXTINF:")) {
-        const tvgIdMatch = trimmed.match(/tvg-id="(\d+)"/);
-        const groupMatch = trimmed.match(/group-title="([^"]+)"/);
-        const logoMatch = trimmed.match(/tvg-logo="([^"]+)"/);
-        const channelMatch = trimmed.match(/,(.*)$/);
-
-        currentTvgId = tvgIdMatch ? tvgIdMatch[1] : null;
-        currentGroup = groupMatch ? groupMatch[1] : null;
-        currentLogo = logoMatch ? logoMatch[1] : null;
-        currentChannel = channelMatch ? channelMatch[1] : null;
-      }
-
-      // Extract kid and key
-      else if (trimmed.startsWith("#KODIPROP:inputstream.adaptive.license_key=")) {
-        const [kid, key] = trimmed.split("=")[1].split(":");
-        currentKid = kid;
-        currentKey = key;
-      }
-
-      // Extract user-agent
-      else if (trimmed.startsWith("#EXTVLCOPT:http-user-agent=")) {
-        currentUserAgent = trimmed.split("=")[1];
-      }
-
-      // Extract URL after license
-      else if (currentKid && currentKey && currentTvgId && trimmed.startsWith("http")) {
-        // Remove extra &xxx=... if present
-        const cleanUrl = trimmed.split("&xxx=")[0];
-
-        result[currentTvgId] = {
-          kid: currentKid,
-          key: currentKey,
-          url: cleanUrl,
-          group_title: currentGroup,
-          tvg_logo: currentLogo,
-          channel_name: currentChannel,
-          user_agent: currentUserAgent
-        };
-
-        // Reset for next entry
-        currentKid = null;
-        currentKey = null;
-        currentTvgId = null;
-        currentGroup = null;
-        currentLogo = null;
-        currentChannel = null;
-        currentUserAgent = null;
-      }
+    const res = await fetch(keyUrl, { redirect: "manual" });
+    if (res.status >= 300 && res.status < 400) {
+      const location = res.headers.get("location");
+      if (location) return await fetchKey("https", location.replace("https://", "//"));
     }
-
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2), "utf-8");
-    console.log("✅ stream.json saved successfully.");
-
+    if (!res.ok) {
+      console.warn(`⚠️  Failed to fetch key from ${keyUrl}: ${res.status}`);
+      return { kid: null, k: null };
+    }
+    const json = await res.json();
+    const keyObj = json.keys?.[0];
+    return {
+      kid: keyObj?.kid || null,
+      k: keyObj?.k || null
+    };
   } catch (err) {
-    console.error("❌ Failed to fetch M3U:", err.message);
-    process.exit(1);
+    console.warn(`⚠️  Error fetching key from ${keyUrl}: ${err.message}`);
+    return { kid: null, k: null };
   }
 }
 
-fetchAndSaveJson();
+async function getFinalUrl(url) {
+  try {
+    const res = await fetch(url, { redirect: "manual" });
+    if (res.status >= 300 && res.status < 400) {
+      const location = res.headers.get("location");
+      if (location) {
+        console.log(`  📌 Redirected to: ${location}`);
+        return location;
+      }
+    }
+    if (!res.ok) {
+      console.warn(`⚠️  Failed to resolve URL ${url}: ${res.status}`);
+      return null;
+    }
+    return res.url;
+  } catch (err) {
+    console.warn(`⚠️  Error resolving URL ${url}: ${err.message}`);
+    return null;
+  }
+}
+
+async function main() {
+  console.log("📥 Fetching remote stream.json...");
+  const res = await fetch(INPUT_URL);
+  if (!res.ok) {
+    throw new Error(`Failed to fetch JSON: ${res.status}`);
+  }
+  const raw = await res.json();
+
+  const entries = Object.entries(raw);
+  console.log(`🔄 Processing ${entries.length} channels...`);
+
+  const result = await Promise.all(
+    entries.map(async ([id, data]) => {
+      const { kid, key, url, group_title, tvg_logo, channel_name } = data;
+
+      const realStreamUrl = await getFinalUrl(url);
+
+      if (!realStreamUrl) {
+        console.warn(`⚠️  Skipping id=${id}, could not resolve final URL`);
+        return null;
+      }
+
+      const bpkMatch = realStreamUrl.match(/\/bpk-tv\/([^/]+)\//);
+      let rawName = bpkMatch ? bpkMatch[1] : String(id);
+      rawName = rawName.replace("_BTS", "");
+
+      const displayName = channel_name || rawName.replace(/_/g, " ");
+
+      // Fetch real kid and k from key endpoint
+      const { kid: realKid, k: realKey } = await fetchKey(kid, key);
+
+      const cookieMatch = realStreamUrl.match(/__hdnea__=([^&|]+)/);
+      const cookie = cookieMatch ? `__hdnea__=${cookieMatch[1]}` : "";
+
+      const baseUrl = realStreamUrl.split("?")[0];
+
+      const finalUrl =
+        `${baseUrl}` +
+        `?name=${encodeURIComponent(rawName)}` +
+        `&keyId=${encodeURIComponent(realKid || "")}` +
+        `&key=${encodeURIComponent(realKey || "")}` +
+        (cookie ? `&cookie=${encodeURIComponent(cookie)}` : "");
+
+      console.log(`  ✅ ${displayName} (id: ${id}) | kid: ${realKid}`);
+
+      return {
+        name: displayName,
+        id,
+        logo: tvg_logo,
+        group: group_title,
+        link: DASH_PROXY + finalUrl
+      };
+    })
+  );
+
+  const filtered = result.filter(Boolean);
+
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 4));
+  console.log(`\n✅ output.json generated with ${filtered.length} channels`);
+}
+
+main().catch(err => {
+  console.error("❌ Error:", err.message);
+  process.exit(1);
+});
